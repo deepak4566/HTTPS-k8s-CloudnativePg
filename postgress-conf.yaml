@@ -6,7 +6,7 @@ spec:
   instances: 3
   storage:
     size: 1Gi
-      bootstrap:
+  bootstrap:
     initdb:
       database: goals_database
       owner: goals_user
