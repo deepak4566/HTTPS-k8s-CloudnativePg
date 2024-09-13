@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: my-app-service
 spec:
+  type: NodePort
   selector:
     app: my-app
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
+      nodePort: 30080  # Optional: If omitted, Kubernetes will assign a random port in the 30000-32767 range.
