@@ -33,7 +33,7 @@ spec:
         - name: DB_PORT
           value: "5432"
         - name: DB_NAME
-          value: goals_database
+          value: openproject
         ports:
         - containerPort: 8080
         readinessProbe:
