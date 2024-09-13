@@ -9,7 +9,7 @@ spec:
     size: 1Gi
   bootstrap:
     initdb:
-      database: goals_database
-      owner: goals_user
+      database: openproject
+      owner: openproject
       secret:
         name: my-postgresql-credentials
