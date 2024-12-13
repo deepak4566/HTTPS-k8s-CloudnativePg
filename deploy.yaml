@@ -36,22 +36,5 @@ spec:
           value: openproject
         ports:
         - containerPort: 8080
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 8080
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8080
-          initialDelaySeconds: 15
-          periodSeconds: 20
-        resources:
-          requests:
-            memory: "350Mi"
-            cpu: "250m"
-          limits:
-            memory: "500Mi"
-            cpu: "500m"
+        
+        
